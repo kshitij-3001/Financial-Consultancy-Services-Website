@@ -1,0 +1,274 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Services Container */
+  .about-us-container {
+    /* margin-top: 70px;  */
+    /* Space below the fixed navbar */
+    width: 100%; /* Full width */
+  }
+  
+  /* Hero Section */
+  .about-us-hero {
+    width: 100%; /* Full width of the screen */
+    height: 700px; /* Fixed height */
+    background-image: url('../../assets/images/about-us-bg.png'); /* Replace with your image path */
+    background-size: cover; /* Cover entire width while maintaining proportions */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Caption Styling */
+  .caption {
+    text-align: center;
+    color: #fff;
+    /* background-color: rgba(24, 186, 226, 0.192);  */
+    /* Semi-transparent black overlay for readability */
+    /* padding: 20px; */
+    /* border-radius: 10px; */
+  }
+  
+  .about-us-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  
+  .about-us-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .about-us-title {
+      font-size: 2.5rem; /* Smaller title on tablets */
+    }
+    .about-us-subtitle {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .about-us-title {
+      font-size: 2rem; /* Smaller title on mobile */
+    }
+    .about-us-subtitle {
+      font-size: 0.9rem;
+    }
+  }
+
+  /* About Us Section */
+/* Optional Custom Styling */
+.about-us h2 {
+  font-size: 1.5rem;
+  /* font-weight: bold; */
+  text-transform: uppercase;
+  color: #0376C3;
+}
+
+.about-us p {
+  line-height: 1.8;
+}
+
+.about-us img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-18 {
+  align-items: center;
+  background-color: #0376C3;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button-18:hover,
+.button-18:focus {
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.button-18:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button-18:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+/* Team Section Styling */
+
+
+.team-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.small-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #0376C3;
+  margin: 0 15px;
+}
+
+.line-left, .line-right {
+  border: 0;
+  height: 2px;
+  background-color: #0376C3;
+  width: 150px;
+}
+
+.founder-title, .cofounder-title, .work-title {
+  font-size: 2rem;
+  color: #0376C3;
+  margin-bottom: 15px;
+}
+
+.founder-content, .cofounder-content {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.founder-content p, .cofounder-content p {
+  font-size: 1rem;
+}
+
+.work-boxes {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.work-box {
+  width: 150px;
+  height: 150px;
+  background-color: #004488;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures the image doesn't overflow the box */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.work-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.work-box-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the box without stretching */
+  object-position: center; /* Centers the image in case it doesn't perfectly fit */
+}
+
+/* Contact Us Section Styling */
+.contact-us {
+  background-color: #f4f4f4; /* Light gray background for a clean and modern look */
+  color: #333; /* Dark text for good contrast */
+  padding: 60px 0; /* Space for content */
+  text-align: center;
+}
+
+.contact-us h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0376C3; /* Blue color for the heading */
+  margin-bottom: 15px;
+}
+
+.contact-us .lead {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555; /* Slightly lighter color for subheading */
+}
+
+.contact-us p.h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #333; /* Dark text for better visibility */
+}
+/*
+.btn-contact-now {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-contact-now:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}*/
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .contact-us h2 {
+      font-size: 1.8rem;
+  }
+
+  .contact-us p.h4 {
+      font-size: 1.2rem;
+  }
+
+  .btn-contact-now {
+      font-size: 1rem;
+      padding: 12px 25px;
+  }
+}

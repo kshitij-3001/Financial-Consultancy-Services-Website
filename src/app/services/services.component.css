@@ -1,0 +1,365 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Services Container */
+  .services-container {
+    /* margin-top: 70px;  */
+    /* Space below the fixed navbar */
+    width: 100%; /* Full width */
+  }
+  
+  /* Hero Section */
+  .services-hero {
+    width: 100%; /* Full width of the screen */
+    height: 700px; /* Fixed height */
+    background-image: url('../../assets/images/services_bg.png'); /* Replace with your image path */
+    background-size: cover; /* Cover entire width while maintaining proportions */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Caption Styling */
+  .caption {
+    text-align: center;
+    color: #fff;
+    /* background-color: rgba(24, 186, 226, 0.192);  */
+    /* Semi-transparent black overlay for readability */
+    /* padding: 20px; */
+    /* border-radius: 10px; */
+  }
+  
+  .services-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  
+  .services-subtitle {
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .services-title {
+      font-size: 2.5rem; /* Smaller title on tablets */
+    }
+    .services-subtitle {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .services-title {
+      font-size: 2rem; /* Smaller title on mobile */
+    }
+    .services-subtitle {
+      font-size: 0.9rem;
+    }
+  }
+  
+  
+  /* Highlights Heading Styling */
+  .highlights-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+  }
+  
+  .line-left, .line-right {
+    border: 0;
+    height: 3px;
+    background-color: #0376C3; /* You can adjust the color */
+    width: 80px;
+  }
+  
+  .highlight-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #0376C3;
+    margin: 0 15px;
+  }
+  
+  /* Adjusted Services Section Heading */
+  .h1-services {
+    font-size: 2.5rem;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #0376C3;
+    margin-bottom: 30px;
+  }
+  /* Timeline Container */
+  .timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  /* Vertical Line (Timeline) */
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 62%;
+    top: 0;
+    height: 100%;
+    border-left: 3px solid #004488; /* Color of the vertical line */
+    width: 0;
+    transform: translateX(-50%);
+  }
+  
+  /* Service Box Containers */
+  .service-box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  /* Timeline Dots */
+  .service-box-container::before {
+    content: '';
+    position: absolute;
+    left: 62%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: #004488; /* Color of the dots */
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  /* Service Box Styling */
+  .service-box {
+    margin-top: 10px;
+    width: 60%;
+    padding: 30px; /* Add more padding for a bigger feel */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px #d3d3d3, -5px -5px 10px #ffffff;
+    border-left: 3px solid #d3d3d3; /* Light left border */
+    border-right: 3px solid #004488be; /* Dark right border */
+    border-bottom: 3px solid #004488bd;
+    min-height: 200px;
+  }
+  
+  .service-image {
+    width: 35%; /* Slightly smaller compared to the box */
+    text-align: right;
+  }
+  
+  .service-image img {
+    width: 100%;
+    max-height: 220px; /* Keeps images proportionally smaller */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-box h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #004488;
+    margin-bottom: 12px;
+  }
+  
+  .service-box p {
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.8;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+  .service-box-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .service-box,
+  .service-image {
+    width: 100%;
+  }
+  
+  .service-box {
+    padding: 20px;
+  }
+  
+  .service-image {
+    margin-top: 15px;
+  }
+  
+  /* Hide the Timeline on Small Screens */
+  .timeline::before {
+    display: none;
+  }
+  
+  .service-box-container::before {
+    display: none;
+  }
+  }
+  
+  /* Get In Touch Section */
+  .get-in-touch {
+    background-image: url('../../assets/images/contact-us2.png'); /* Background Image */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 30px;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 50px;
+  }
+  
+  /* Highlights Heading Styling */
+  .get-in-touch .highlights-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .get-in-touch .highlight-title {
+    font-size: 1.3rem;
+    /* font-weight: 500; */
+    color: #fff;
+    margin: 0 15px;
+  }
+  
+  .get-in-touch hr {
+    border: 0;
+    height: 2px;
+    background-color: #fff;
+    width: 80px;
+  }
+  
+  /* Contact Heading */
+  .contact-heading {
+    font-size: 2.5rem;
+    /* font-weight: bold; */
+    text-align: center;
+    margin-bottom: 15px;
+    color: #FFA500;
+  }
+  
+  .contact-subheading {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    margin-left: 70px; /* Left margin as requested */
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  /* Form Fields */
+  .contact-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  /* Input fields with transparent background */
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #777575; /* Default border color */
+    border-radius: 20px 0 20px 20px; /* Custom border-radius (left circular, sharp right top, circular bottom) */
+    background-color: rgba(12, 122, 248, 0.1); /* Slight transparent white background */
+    color: #fff; /* White text */
+    font-size: 1rem;
+    transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  /* Focus Effect */
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #0376C3;
+    /* Change border color on focus */
+    box-shadow: 0 0 10px rgba(0, 95, 163, 0.8);
+    /* Glowing border effect on focus */
+    outline: none;
+    /* Remove default browser outline */
+  }
+  
+  
+  .contact-form input[type="text"], .contact-form input[type="email"] {
+    height: 40px;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  input::placeholder{
+    color: white;
+  }
+  
+  textarea::placeholder{
+    color: white;
+  }
+  
+  /* Submit Button */
+  .contact-form .submit-btn {
+    background-color: #0376C3;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px 0 20px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-form .submit-btn:hover {
+    background-color: #005fa3;
+  }
+  
+  /* Responsive Adjustments for the Contact Form */
+  @media (max-width: 768px) {
+    .contact-form {
+        margin-left: 0; /* Remove left margin on smaller screens */
+        padding: 20px;
+    }
+  
+    .contact-heading {
+        font-size: 2rem;
+    }
+  
+    .contact-subheading {
+        font-size: 1rem;
+    }
+  }
